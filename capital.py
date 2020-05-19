@@ -1,8 +1,11 @@
 
 
 def A():
-    for row in range(7):
-        for col in range(5):
+    x=int(input("Enter the height :"))
+    y=int(input("Enter the width :"))
+    
+    for row in range(x):
+        for col in range(y):
             if (row==0)and (col in {1,2,3}):
                 print("*",end=" ")
             elif (row in {1,2,4,5,6}) and (col in {0,4}):
@@ -13,7 +16,7 @@ def A():
             else:
                 print(' ',end=" ")
         print()
-#A()
+A()
 
 print()
 print()
